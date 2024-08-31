@@ -1,0 +1,118 @@
+  /* Reset some basic elements */
+  body, h1, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f8fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+.form-container h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+    color: #333;
+}
+
+.form-container label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #555;
+    display: block;
+}
+
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #333;
+    box-sizing: border-box;
+}
+
+.form-container input[type="text"]:focus,
+.form-container input[type="email"]:focus,
+.form-container input[type="password"]:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.form-container button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-container button:hover {
+    background-color: #0056b3;
+}
+
+.error-list {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.error-list ul {
+    list-style-type: none;
+}
+
+.error-list li {
+    margin-bottom: 5px;
+}
+
+/* success message */
+.success-heading {
+    color: #28a745;
+    font-size: 2em;
+    margin-bottom: 20px;
+    font-weight: bold;
+    border-bottom: 2px solid #28a745;
+    padding-bottom: 10px;
+}
+
+.thank-you {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.user-email {
+    font-size: 1em;
+    color: #888;
+    margin-bottom: 20px;
+}
+
+.user-email::before {
+    content: "📧 ";
+    font-size: 1.2em;
+    color: #555;
+}
